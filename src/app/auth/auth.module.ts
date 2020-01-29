@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { COMPONENTS } from './components';
 import { AuthRoutingModule } from './auth-routing.module';
-import { AuthenticationService } from './services/authentication.service';
+import { SERVICES } from './services';
 @NgModule({
   imports: [
     CommonModule,
@@ -11,6 +11,6 @@ import { AuthenticationService } from './services/authentication.service';
     AuthRoutingModule
   ],
   declarations: [...COMPONENTS],
-  providers: [AuthenticationService]
+  providers: [...SERVICES]
 })
 export class AuthModule { }
